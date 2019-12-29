@@ -1,0 +1,280 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: #e9732a;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+h2{ color:#e9732a;
+font-family: 'Nanum Gothic', sans-serif;
+margin-left: 12px;}
+
+
+.scene {
+    width: 45%;
+    height: 90%;
+    margin: 5% 5% 5% 50%;
+  
+  perspective: 1000px;
+}
+
+.book {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  transform-style: preserve-3d;
+}
+
+.page {
+  cursor: pointer;
+  position: absolute;
+  color: black;
+  width: 100%;
+  height: 100%;
+
+  transition: 1.5s transform;
+  transform-style: preserve-3d;  
+  transform-origin: left center;
+}
+.front,
+.back {
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  padding: 10% 5% 5%;
+  box-sizing: border-box;
+  
+  backface-visibility: hidden;
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
+  background: linear-gradient(to bottom right, #fff, #ccc);
+}
+.back {
+  transform: rotateY(180deg);
+}
+
+.page.active {
+  z-index: 1;
+}
+.page.flipped {
+  transform: rotateY(-180deg);
+}
+.page.flipped:last-of-type {
+  z-index: 1;
+}
+
+p {position: absolute;
+
+  width: 480px;
+  margin: 0 0 0.1em;
+  margin-left: 12px;
+  text-indent: 0em;
+  margin-bottom:1em;
+  text-align: justify;
+  font-size: 13.5px;
+  letter-spacing :-0.5px;
+  line-height:22.8px;
+}
+
+p.b {position: absolute;
+     width: 480px;
+    margin: 0 0 0.1em;
+    margin-left: 12px;
+     margin-top: 150px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;}
+
+p.d {position: absolute;
+     width: 480px;
+    margin: 0 0 0.1em;
+    margin-left: 12px;
+     margin-top: 143px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;}     
+
+p.e {position: absolute;
+     width: 480px;
+    margin: 0 0 0.1em;
+    margin-left: 12px;
+     margin-top: 245px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;}
+
+p.f {position: absolute;
+     width: 480px;
+    margin: 0 0 0.1em;
+    margin-left: 12px;
+     margin-top: 60px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;}
+
+     p.ff {position: absolute;
+     width: 480px;
+    margin: 0 0 0.1em;
+    margin-left: 12px;
+     margin-top: 80px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;}
+
+p.h {position: absolute;
+     width: 480px;
+    margin: 0 0 0.1em;
+    margin-left: 12px;
+     margin-top: 145px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;}
+
+p.hh {position: absolute;
+     width: 480px;
+    margin: 0 0 0.1em;
+    margin-left: 12px;
+     margin-top: 255px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;}
+
+p.g {position: absolute;
+     width: 480px;
+     margin: 0 0 0.1em;
+     margin-left: 12px;
+     margin-top: 160px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;} 
+
+p.gg {position: absolute;
+     width: 480px;
+     margin: 0 0 0.1em;
+     margin-left: 12px;
+     margin-top: 185px;
+     text-indent: 0em;
+     margin-bottom:1em;
+     text-align: justify;
+     font-size: 13.5px;
+     letter-spacing :-0.5px;
+     line-height:22.8px;}  
+
+
+
+p.a{position: absolute;
+    width: 170px;
+    margin: 0 0 0.1em;
+    margin-top: 1.5px;
+    margin-left: 520px;
+    text-indent: 0em;
+    margin-bottom:1em;
+    text-align: justify;
+    font-size: 11px;
+    letter-spacing :-0.5px;
+    line-height:15px;}
+
+p.c{position: absolute;
+    width: 170px;
+    margin: 0 0 0.1em;
+    margin-top: 220px;
+    margin-left: 380px;
+    text-indent: 0em;
+    margin-bottom:1em;
+    text-align: justify;
+    font-size: 11px;
+    letter-spacing :-0.5px;
+    line-height:15px;}
+
+p.cc{position: absolute;
+    width: 170px;
+    margin: 0 0 0.1em;
+    margin-top: 180px;
+    margin-left: 380px;
+    text-indent: 0em;
+    margin-bottom:1em;
+    text-align: justify;
+    font-size: 11px;
+    letter-spacing :-0.5px;
+    line-height:15px;}
+
+    p.ccc{position: absolute;
+    width: 170px;
+    margin: 0 0 0.1em;
+    margin-top: 200px;
+    margin-left: 380px;
+    text-indent: 0em;
+    margin-bottom:1em;
+    text-align: justify;
+    font-size: 11px;
+    letter-spacing :-0.5px;
+    line-height:15px;}
+
+p.cccc{position: absolute;
+    width: 170px;
+    margin: 0 0 0.1em;
+    margin-top: 285px;
+    margin-left: 470px;
+    text-indent: 0em;
+    margin-bottom:1em;
+    text-align: justify;
+    font-size: 11px;
+    letter-spacing :-0.5px;
+    line-height:15px;}
+
+.qr {
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+}
+.qr img {
+  display: block;
+  width: 300px;
+  text-align: center;
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .scene {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
